@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Fire Like API — Tester</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <div class="badge">API TESTER</div>
+  <h1>Free Fire Like API</h1>
+  <p class="sub">Teste sua API informando o UID e escolhendo a região.</p>
+  <label for="api">URL da API</label>
+  <input id="api" placeholder="https://sua-api.vercel.app" autocomplete="url">
+  <label for="uid">UID do jogador</label>
+  <input id="uid" inputmode="numeric" placeholder="Ex.: 1234567890">
+  <label>Região</label>
+  <div class="regions">
+    <button class="region active" data-region="BR">🇧🇷 BR</button>
+    <button class="region" data-region="IND">🇮🇳 IND</button>
+    <button class="region" data-region="EUROPE">🇪🇺 EUROPE</button>
+  </div>
+  <button id="send" class="send">Enviar Like</button>
+  <pre id="result">A resposta da API aparecerá aqui.</pre>
+  <p class="hint">O botão usa <code>GET /like?uid=...&region=...</code>.</p>
+</main>
+<script src="script.js"></script>
+</body></html>
